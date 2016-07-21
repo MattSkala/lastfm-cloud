@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  padding: 30px;
+  font-family: 'Impact';
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#content {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+#save {
+  color: black;
+  border: 1px solid black;
+  padding: 3px 8px;
+  text-decoration: none;
+}
+
+#save:hover {
+  background: black;
+  color: white;
+}

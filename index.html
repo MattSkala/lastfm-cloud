@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>Last.fm Taste Cloud</title>
+  <script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+  <script type="text/javascript" src="bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
+  <script type="text/javascript" src="bower_components/file-saver/FileSaver.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <h1>Last.fm Taste Cloud</h1>
+
+  <form id="form" onSubmit="return handleSubmitForm(this)">
+    <input type="text" name="username" placeholder="Last.fm username" value="MattSkala" required>
+    <select name="period">
+      <option value="7day">7 days</option>
+      <option value="1month">1 month</option>
+      <option value="3month" selected>3 months</option>
+      <option value="6month">6 months</option>
+      <option value="12month">12 months</option>
+      <option value="allover">allover</option>
+    </select>
+    <input type="submit" value="Generate" id="submit">
+  </form>
+
+  <div id="content"></div>
+  <a href="javascript:void(0)" id="save">Save SVG</a>
+
+  <script type="text/javascript">
+    app.run();
+  </script>
+</body>
+</html>
